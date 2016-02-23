@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="AppTheme.Main" parent="@style/AppTheme">
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.Detail" parent="@style/AppTheme">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/detail_window_enter_transition</item>
+        <item name="android:windowReturnTransition">@transition/detail_window_return_transition</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

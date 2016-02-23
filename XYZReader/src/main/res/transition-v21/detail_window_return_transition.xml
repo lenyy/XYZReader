@@ -1,0 +1,16 @@
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together"
+    android:duration="500">
+    <changeImageTransform/>
+    <fade>
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"/>
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+    <slide>
+        <targets>
+            <target android:targetId="@id/article_body" />
+        </targets>
+    </slide>
+</transitionSet>

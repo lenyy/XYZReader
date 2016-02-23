@@ -9,7 +9,9 @@ public class Config {
     static {
         URL url = null;
         try {
-            url = new URL("https://dl.dropboxusercontent.com/u/231329/xyzreader_data/data.json" );
+            //The first url didn't work so i had to create a new repository on my git profile
+            //url = new URL("https://dl.dropboxusercontent.com/u/231329/xyzreader_data/data.json" );
+            url = new URL("https://raw.githubusercontent.com/lenyy/xyzreader_data/master/data.json");
         } catch (MalformedURLException ignored) {
             // TODO: throw a real error
         }

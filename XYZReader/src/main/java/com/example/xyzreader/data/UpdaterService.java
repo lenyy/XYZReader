@@ -73,6 +73,7 @@ public class UpdaterService extends IntentService {
                 time.parse3339(object.getString("published_date"));
                 values.put(ItemsContract.Items.PUBLISHED_DATE, time.toMillis(false));
                 cpo.add(ContentProviderOperation.newInsert(dirUri).withValues(values).build());
+                Log.v(TAG,"ID : " + object.getString("id" ));
             }
 
             getContentResolver().applyBatch(ItemsContract.CONTENT_AUTHORITY, cpo);
